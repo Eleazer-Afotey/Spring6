@@ -13,7 +13,7 @@ import java.util.*;
 @Slf4j
 public class CustomerServiceImpl implements CustomerService {
 
-    private HashMap<UUID, CustomerDTO> customerMap;
+    private final HashMap<UUID, CustomerDTO> customerMap;
 
     public CustomerServiceImpl(){
         this.customerMap = new HashMap<>();

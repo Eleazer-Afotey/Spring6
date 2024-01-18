@@ -40,7 +40,7 @@ class BeerRepositoryTest {
 
         assertThrows(ConstraintViolationException.class, () -> {
                 Beer savedBeer = beerRepository.save(Beer.builder()
-                .beerName("My beer is 123-034i3t- 34034039403434234345t34t3ergregetgergtg")
+                .beerName("My beer is 123-034i3t- 34034039403434234345t34t3ergregetgergtgdfghdsfgdfyhjdghdhjgfshrthjfgdnhndfgdh")
                 .beerStyle(BeerStyle.PALE_ALE)
                 .price(BigDecimal.valueOf(18.99))
                 .upc("2342")
